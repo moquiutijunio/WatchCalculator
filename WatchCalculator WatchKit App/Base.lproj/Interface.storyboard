@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch40"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
@@ -9,9 +9,132 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchCalculator_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchCalculator_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="136" height="149" alignment="center" verticalAlignment="center" layout="vertical" id="FiF-oX-Q4s">
+                            <items>
+                                <group width="1" height="32" alignment="left" id="AsC-cs-hes">
+                                    <items>
+                                        <button width="31" height="29" alignment="left" title="AC" id="mJo-F5-A2W">
+                                            <color key="backgroundColor" red="0.9389637113" green="0.67428857090000005" blue="0.32147419449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                            <connections>
+                                                <action selector="ac" destination="AgC-eL-Hgc" id="w1a-2f-HwU"/>
+                                            </connections>
+                                        </button>
+                                        <label width="99" height="37" alignment="right" text="0" textAlignment="right" id="4RL-ml-zIj"/>
+                                    </items>
+                                </group>
+                                <group height="25" alignment="left" id="Eey-RA-4eJ">
+                                    <items>
+                                        <button width="32" height="1" alignment="left" title="7" id="bad-z3-FTO">
+                                            <connections>
+                                                <action selector="seven" destination="AgC-eL-Hgc" id="HOv-f4-IjB"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="8" id="xdk-aq-5BX">
+                                            <connections>
+                                                <action selector="eight" destination="AgC-eL-Hgc" id="CMg-PQ-fTp"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="9" id="ubv-bT-6lM">
+                                            <connections>
+                                                <action selector="nine" destination="AgC-eL-Hgc" id="67p-hT-RXA"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="÷" id="VD5-x2-oFe">
+                                            <color key="backgroundColor" red="0.9389637113" green="0.67428857090000005" blue="0.32147419449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                            <connections>
+                                                <action selector="divide" destination="AgC-eL-Hgc" id="mzq-FI-VcT"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group height="25" alignment="left" id="Ali-L6-je3">
+                                    <items>
+                                        <button width="32" height="1" alignment="left" title="4" id="c7p-iV-SET">
+                                            <connections>
+                                                <action selector="four" destination="AgC-eL-Hgc" id="QeF-NI-bYb"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="5" id="h9n-HO-pJ7">
+                                            <connections>
+                                                <action selector="five" destination="AgC-eL-Hgc" id="GQD-Qd-fiP"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="6" id="0hQ-WO-nlw">
+                                            <connections>
+                                                <action selector="sex" destination="AgC-eL-Hgc" id="0Nn-x9-RaZ"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="x" id="4h4-rx-sqg">
+                                            <color key="backgroundColor" red="0.9389637113" green="0.67428857090000005" blue="0.32147419449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                            <connections>
+                                                <action selector="multiply" destination="AgC-eL-Hgc" id="EdG-us-lbq"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group height="25" alignment="left" id="eT0-TI-PKR">
+                                    <items>
+                                        <button width="32" height="1" alignment="left" title="1" id="NkO-3d-l6t">
+                                            <connections>
+                                                <action selector="one" destination="AgC-eL-Hgc" id="9tN-N9-zE0"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="2" id="Bow-Fw-qYE">
+                                            <connections>
+                                                <action selector="two" destination="AgC-eL-Hgc" id="MxP-xY-J1m"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="3" id="qLT-DN-b9g">
+                                            <connections>
+                                                <action selector="third" destination="AgC-eL-Hgc" id="j8d-7c-m9y"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="-" id="xDw-lL-h6c">
+                                            <color key="backgroundColor" red="0.9389637113" green="0.67428857090000005" blue="0.32147419449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                            <connections>
+                                                <action selector="subtrat" destination="AgC-eL-Hgc" id="IxV-di-UJ4"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group height="25" alignment="left" id="Zrk-SP-J0L">
+                                    <items>
+                                        <button width="32" height="1" alignment="left" title="0" id="7oo-jE-cBn">
+                                            <connections>
+                                                <action selector="zero" destination="AgC-eL-Hgc" id="ltf-u0-e52"/>
+                                            </connections>
+                                        </button>
+                                        <button width="66" height="1" alignment="left" title="=" id="Bzg-RK-vqV">
+                                            <color key="backgroundColor" red="0.9389637113" green="0.67428857090000005" blue="0.32147419449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                            <connections>
+                                                <action selector="result" destination="AgC-eL-Hgc" id="0Ed-RE-3Us"/>
+                                            </connections>
+                                        </button>
+                                        <button width="32" height="1" alignment="left" title="+" id="KAo-l1-D6w">
+                                            <color key="backgroundColor" red="0.9389637113" green="0.67428857090000005" blue="0.32147419449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                            <connections>
+                                                <action selector="add" destination="AgC-eL-Hgc" id="mRQ-o1-SbG"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="valueLabel" destination="4RL-ml-zIj" id="bfA-dm-9Kv"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.52173913043478" y="344.55357142857144"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
